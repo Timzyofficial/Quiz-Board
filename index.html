@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Quiz</title>
+		<link rel="stylesheet" href="./style.css" />
+		<!-- <script src="./jquery-3.7.0.min.js"></script> -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+	</head>
+	<body>
+		<main>
+			<h1>Quiz Board</h1>
+			<form class="form" action="#" onsubmit="submitForm(event)">
+				<p>1 . What is the shortform of HTML</p>
+
+				<input type="radio" id="html" name="q1" value="HTML" required />
+				<label for="html">HTML</label><br />
+
+				<input type="radio" id="hmlt" name="q1" value="HMLT" />
+				<label for="hmlt">HMLT</label><br />
+
+				<input type="radio" id="mlht" name="q1" value="MLHT" />
+				<label for="mlht">MLHT</label>
+
+				<br />
+
+				<p>2 .What is the other name for JavaScript:</p>
+
+				<input type="radio" id="ecma" name="q2" value="ECMAScript" required />
+				<label for="ecma">ECMAScript</label><br />
+
+				<input type="radio" id="js" name="q2" value="JS" />
+				<label for="js">JS</label><br />
+
+				<input type="radio" id="idontknow" name="q2" value="I don't Know" />
+				<label for="idontknow">I don't know</label><br />
+
+				<br />
+
+				<p>3 .What is the use of CSS:</p>
+
+				<input type="radio" id="style" name="q3" value="Styling" required />
+				<label for="style">Styling</label><br />
+
+				<input type="radio" id="function" name="q3" value="Functionality" />
+				<label for="function">Functionality</label><br />
+
+				<br />
+
+				<p>4. Which of the following is not a list type in HTML?</p>
+
+				<input type="radio" id="ol" name="q4" value="Ordered list" required />
+				<label for="ol">Ordered list</label><br />
+
+				<input type="radio" id="rl" name="q4" value="Random List" />
+				<label for="rl">Random List</label><br />
+
+				<input type="radio" id="ul" name="q4" value="Unordered list" />
+				<label for="ul">Unordered list</label><br />
+
+				<br />
+
+				<input type="submit" value="Submit" />
+			</form>
+
+			<div class="scoreboard">
+				<p>Your Score is :</p>
+				<span class="score"></span>
+				<br />
+			</div>
+		</main>
+	</body>
+	<script src="./script.js"></script>
+</html>
